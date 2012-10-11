@@ -25,11 +25,15 @@ public class FormatPrice {
 		String myformatPrice,priceText;
 		priceText="23,5";
 		
+		/*
 		String formatPrice = new FormatPrice(priceText);
 		
 		myformatPrice = formatPrice.formatPrice(Double.parseDouble(priceText));
 		
 		System.out.println("My format Price :"+myformatPrice);
+		*/
+		
+		System.out.println("My format Price :");
 		
 	}	
 }
