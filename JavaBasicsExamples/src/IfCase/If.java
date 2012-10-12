@@ -1,7 +1,6 @@
 package IfCase;
 
 public class If {
-
 	/**
 	 * @param args
 	 */

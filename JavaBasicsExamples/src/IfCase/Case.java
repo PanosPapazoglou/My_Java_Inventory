@@ -1,5 +1,6 @@
 package IfCase;
 
+// TODO na olokliroso to example
 public class Case {
 	
 	public final static int TITANIUM = 0; 
@@ -20,7 +21,6 @@ public class Case {
 		printGift(TITANIUM);
 
 	}
-
 	//QUESTION mporo na min exo break oste 2 case na exoun idies entoles;
 	public static void printGift(int serviceLevel) {
 		switch(serviceLevel) {
