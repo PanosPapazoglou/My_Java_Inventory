@@ -1,12 +1,16 @@
 package loops;
 
 public class For {
-// TODO for
+// TODO for more examples
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println("For Class");
+		int sum = 0;
+		for (int i = 0; i < 10; i++) {  // i indexes each element successively.
+		    System.out.println(i);
+		}
+		
 	}
 
 }
