@@ -7,6 +7,17 @@ public class If {
 	public static void main(String[] args) {
 		boolean alive=true;
 		
+		// String if (Start)
+		String string1 = "foo";
+		String string2 = "FOO";
+
+		if (string1.equals(string2)){
+		  // this line will not print because the
+		  // java string equals method returns false:
+		  System.out.println("The two strings are the same.");
+		}
+		// String if (End)
+		
 		
 		// Boolean if (Start)
 		if(alive){
