@@ -6,7 +6,7 @@ public class ArrayList {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub #2
 		/*
 		ArrayList<String> places = new ArrayList<String>();
 		places.add("Buenos Aires");
