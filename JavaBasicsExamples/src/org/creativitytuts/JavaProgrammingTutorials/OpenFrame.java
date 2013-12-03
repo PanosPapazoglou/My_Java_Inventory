@@ -1,6 +1,6 @@
 /* This programms open a frame from a menu */
 
-package org.creativitytuts;
+package org.creativitytuts.JavaProgrammingTutorials;
 
 import javax.swing.*;
 

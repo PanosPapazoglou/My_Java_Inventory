@@ -1,4 +1,4 @@
-package org.creativitytuts;
+package org.creativitytuts.JavaProgrammingTutorials;
 
 import javax.swing.JOptionPane;
 
