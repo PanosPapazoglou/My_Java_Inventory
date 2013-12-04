@@ -1,12 +1,12 @@
 /* 
- *  Το πρόγραμμα αυτό κάνει σύνδεση με μια βάση δεδομένων της MS Access και εμφανίζει κάποιες εγγραφές
- *  Για την σύνδεση θα πρέπει να προηγηθεί η ρύθμιση του Datasource μέσω του ODBC
+ *  To programma ayto kanei sindesi me mia basi dedomenon tis MS Access kai emfanizei kapoies eggrafes
+ *  Gia tin sindesi tha prepei na proigithei i rithmisi tou Datasource meso tou ODBC
  *  
  *  
  *  
- *  ’ρθρα που σχετίζονται με αυτό το πρόγραμμα
+ *  Arthra pou sxetizontai me ayto to programma
  *  
- *  Ρύθμιση Datasource και ODBC με Access για σύνδεση μέσω Java  
+ *  Rythmisi Datasource kai ODBC me MS Access gia sindesi meso Java  
  *  http://kb.dualmind.gr/viewtopic.php?f=130&t=684&sid=1c4429ef9abd6c95d64da134f3d695b2
  *  
  *  Dynamic Class Loading
