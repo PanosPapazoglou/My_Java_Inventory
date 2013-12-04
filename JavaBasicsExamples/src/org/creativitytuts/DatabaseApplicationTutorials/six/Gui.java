@@ -1,3 +1,9 @@
+/*
+ * Edo kanoume xrisi tou ResultSet antikeimenou
+ * rs.getString("Fname")              -> Pairnoume ta data gia ena record kai gia sigkekrimeno column
+ * rs.updateString("Fname", fname);   -> Edo apothikeyoume ta data se ena record gia ena sigkekrimeno column
+ * 
+ */
 package org.creativitytuts.DatabaseApplicationTutorials.six;
 
 import javax.swing.*;
@@ -249,7 +255,6 @@ public class Gui extends DBConnect{
 		});		
 		
 
-		
 		//Add ud ActionListener
 		ud.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent ev){
