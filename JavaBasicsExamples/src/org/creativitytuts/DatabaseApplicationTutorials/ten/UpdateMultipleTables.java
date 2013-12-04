@@ -6,6 +6,7 @@
  *  
  * rs.updateString("Fname", fname);   -> Edo apothikeyoume ta data se ena record gia ena sigkekrimeno column
  * 
+ * 
  */
 
 package org.creativitytuts.DatabaseApplicationTutorials.ten;
@@ -112,6 +113,16 @@ public class UpdateMultipleTables {
 					String car1  = car.getText();
 					String make1 = make.getText();
 
+					/*
+					Xrisimopoioume st.executeUpdate(sql)
+					Gia SQL Data Manipulation Language (DML) statement, opos INSERT, UPDATE or DELETE; 
+					i gia  SQL statement pou den epistrefoun tipota , opos ta DDL statement p.x. CREATE , ALTER , DROP k.t.l.
+
+					Xrisimopoioume st.executeUpdate(sql)
+					Gia na ektelesoume SQL statement gia na staloun stin basi , sinithos statika sSQL SELECT statements
+					*/
+					
+					
 					String sql = "INSERT INTO Table1 values('"+name1+"','"+job1+"')";
 					st.executeUpdate(sql);
 					
