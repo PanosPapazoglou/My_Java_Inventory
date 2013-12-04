@@ -1,4 +1,4 @@
-package database;
+package org.creativitytuts.JavaProgrammingTutorials;
 
 import java.sql.*;
 
@@ -60,6 +60,11 @@ public class DBConnect {
 			System.out.println("Error:"+ex);
 		}
 		
+	}
+	
+	public static void main(String[] args){
+		DBConnect connect = new DBConnect();
+		connect.getData();
 	}
 	
 	
