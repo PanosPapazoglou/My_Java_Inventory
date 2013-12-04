@@ -56,8 +56,7 @@ public class DBConnect {
 			
 			
 			//Object that will help us to execute our queiries 
-			// Ta arguments ayta einai gia na mporoume na kanoume Scroll stin basi alla kai update stin basi mas
-			st = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
+			st = con.createStatement();
 			
 			// Our query
 			String sql = "select * from Table1";

@@ -1,8 +1,10 @@
-package org.creativitytuts.DatabaseApplicationTutorials.four;
+package org.creativitytuts.DatabaseApplicationTutorials.five;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.*;
+import java.sql.ResultSet;
 
 public class Gui extends DBConnect{
 	
@@ -19,6 +21,8 @@ public class Gui extends DBConnect{
 	JButton b2;
 	JButton b3;
 	JButton b4;
+	JButton ud;
+	JButton del;
 	
 	
 	
@@ -38,13 +42,13 @@ public class Gui extends DBConnect{
 		
 		//Initialize JFrame
 		f = new JFrame();
-		f.setSize(550,400);;
+		f.setSize(650,400);;
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setLocationRelativeTo(null);
 		f.setVisible(true);
 		
 		//Initialize JPanel
-		p = new JPanel();
+		p = new JPanel(new GridBagLayout());
 		
 		//Initialize JLabels
 		fname = new JLabel("First Name");
@@ -58,11 +62,22 @@ public class Gui extends DBConnect{
 		t2 = new JTextField(10);
 		
 		//Initialize JButtons
-		 b1 = new JButton("Next");
-		 b2 = new JButton("Prev");
-		 b3 = new JButton("Last");
-		 b4 = new JButton("First");
+		  b1 = new JButton("Next");
+		  b2 = new JButton("Prev");
+		  b3 = new JButton("Last");
+		  b4 = new JButton("First");
+		  ud = new JButton("Update");
+		 del = new JButton("Delete");
 		
+		 
+		// Gia na kathorisoume tis sintetagmenes tou grid (noito koutaki..tou grid) kanoume xrisi tou antikeimenou "GridBagConstraints" 
+		GridBagConstraints c = new GridBagConstraints();
+			
+		// H methodos insets toy "GridBagConstraints" kathorizei to external padding tou component sto opoio efarmozete..
+		//  (top , left , Bottom , right)
+		c.insets = new Insets(5,5,5,5);
+			
+			
 		//Initialization Ends
 		
 		
@@ -70,25 +85,50 @@ public class Gui extends DBConnect{
 		// Add them to eache other..
 		
 		// Add Components to the JPanel
-		p.add(fname);
-		p.add(t);
-
-		p.add(lname);
-		p.add(t1);
+		c.gridy = 0;
 		
-		p.add(age);
-		p.add(t2);		
+		c.gridx = 0;
+		p.add(fname,c);
+		c.gridx = 1;
+		p.add(t,c);
 
-		p.add(b4);
-		p.add(b2);
-		p.add(b1);
-		p.add(b3);
+		c.gridx = 2;
+		p.add(lname,c);
+		c.gridx = 3;
+		p.add(t1,c);
+		
+		c.gridx = 4;
+		p.add(age,c);
+		c.gridx = 5;
+		p.add(t2,c);		
+
+		
+		
+		
+		c.gridy = 1;
+		
+		c.gridx = 1;
+		p.add(b4,c);
+		c.gridx = 2;
+		p.add(b2,c);
+		c.gridx = 3;
+		p.add(b1,c);
+		c.gridx = 4;
+		p.add(b3,c);
+		
+		
+		c.gridy = 2;
+		
+		c.gridx = 2;
+		p.add(ud,c);
+		c.gridx = 3;
+		p.add(del,c);
 
 		
 		
 		
 		// Add Jpanel to the JFrame
-		f.add(p);		
+		f.add(p,BorderLayout.WEST);		
 		
 		try{
 			rs.next();
@@ -198,6 +238,60 @@ public class Gui extends DBConnect{
 				
 			}
 		});		
+		
+
+		
+		//Add ud ActionListener
+		ud.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent ev){
+				
+				// Me tin methodo getText enos JTextField Object pairnoume to ti einai grammeno se ayto to text
+				String fname = t.getText();
+				String lname = t1.getText();
+				String age   = t2.getText();
+				
+				try{
+					
+					//Me tin methodo ayti mporoume na kanoume update ena column sto dedomeno record pou krateite stin rs..
+					rs.updateString("Fname", fname);
+					rs.updateString("Lname", lname);
+					rs.updateString("Age", age);
+					
+					//Me ayti tin entoli einai san na toy leme na metafrasei..kai ektelesi (commit) tis parapano entoles pou tou dosame.. 
+					rs.updateRow();
+					
+					JOptionPane.showMessageDialog(null,"Record updated");
+					
+				}catch(Exception ex){
+					
+				}
+				
+				
+			}
+		});			
+		
+		
+		
+		//Add del ActionListener
+		del.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent ev){
+				
+				try{
+					
+					//Me ayti tin entoli diagrafoume to trexon row pou briskete sto rs
+					rs.deleteRow();
+					
+					JOptionPane.showMessageDialog(null,"Record deleted");
+
+
+				}catch(Exception ex){
+					
+				}
+				
+				
+			}
+		});	
+		
 		
 		
 	

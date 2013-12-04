@@ -12,11 +12,11 @@
  *  Dynamic Class Loading
  *  http://kb.dualmind.gr/viewtopic.php?f=130&t=685&sid=1c4429ef9abd6c95d64da134f3d695b2
  */
-package org.creativitytuts.DatabaseApplicationTutorials.one;
+package org.creativitytuts.DatabaseApplicationTutorials.five;
 
 import java.sql.*;
 
-public class CreateDB {
+public class DBConnect {
 
 	// Connection Object help us to get a connecion to the Database
 	Connection con;
@@ -27,7 +27,7 @@ public class CreateDB {
 	// Me ayto to antikeimeno tha pernoume ta results ton quiries mas
 	ResultSet rs;
 	
-	public CreateDB() {
+	public DBConnect() {
 		// Kathe fora pou dimiourgo ena antikeimeno tis klasis CreateDB thelo o constructor tis na dimiourgei ena connection me tin basi
 		connect();
 		
@@ -36,15 +36,6 @@ public class CreateDB {
 	public void connect(){
 		
 		try{
-			/*
-			// Ayto einai to antistoixo gia mysql
-			String driver = "com.mysql.jdbc.Driver";
-			
-			Class.forName(driver);
-			// Create a Connection
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_dbcon","root","");
-			*/
-			
 			
 			// this string holds the driver we need to connect to our database
 			String driver = "sun.jdbc.odbc.JdbcOdbcDriver";
@@ -65,32 +56,15 @@ public class CreateDB {
 			
 			
 			//Object that will help us to execute our queiries 
-			st = con.createStatement();
+			// Ta arguments ayta einai gia na mporoume na kanoume Scroll stin basi alla kai update stin basi mas
+			st = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
 			
 			// Our query
 			String sql = "select * from Table1";
 			
 			//Result of the executed query
 			rs = st.executeQuery(sql);
-			
-			while(rs.next()){
-				// Field inside the table/database  - to getString einai epeidi o tupos tou pediou stin basi mas einai tipou text..
-				String fname = rs.getString("Fname");
-				String lname = rs.getString("Lname");
-				String age   = rs.getString("Age");
-				
-				System.out.println(fname + " " + lname + " " + age);
-				
-				
-			}
-			
-			
-			
-			
-			
-			
-			
-			
+
 			
 			
 		}catch(Exception ex){
@@ -103,7 +77,8 @@ public class CreateDB {
 	
 	public static void main(String[] args){
 		
-		new CreateDB();
+		new DBConnect();
+		new Gui();
 		
 	}
 

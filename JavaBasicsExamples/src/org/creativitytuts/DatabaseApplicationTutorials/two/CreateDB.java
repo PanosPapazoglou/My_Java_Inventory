@@ -16,7 +16,7 @@ package org.creativitytuts.DatabaseApplicationTutorials.two;
 
 import java.sql.*;
 
-public class DBConnect {
+public class CreateDB {
 
 	// Connection Object help us to get a connecion to the Database
 	Connection con;
@@ -27,7 +27,7 @@ public class DBConnect {
 	// Me ayto to antikeimeno tha pernoume ta results ton quiries mas
 	ResultSet rs;
 	
-	public DBConnect() {
+	public CreateDB() {
 		// Kathe fora pou dimiourgo ena antikeimeno tis klasis CreateDB thelo o constructor tis na dimiourgei ena connection me tin basi
 		connect();
 		
@@ -36,6 +36,15 @@ public class DBConnect {
 	public void connect(){
 		
 		try{
+			/*
+			// Ayto einai to antistoixo gia mysql
+			String driver = "com.mysql.jdbc.Driver";
+			
+			Class.forName(driver);
+			// Create a Connection
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_dbcon","root","");
+			*/
+			
 			
 			// this string holds the driver we need to connect to our database
 			String driver = "sun.jdbc.odbc.JdbcOdbcDriver";
@@ -63,7 +72,25 @@ public class DBConnect {
 			
 			//Result of the executed query
 			rs = st.executeQuery(sql);
-
+			
+			while(rs.next()){
+				// Field inside the table/database  - to getString einai epeidi o tupos tou pediou stin basi mas einai tipou text..
+				String fname = rs.getString("Fname");
+				String lname = rs.getString("Lname");
+				String age   = rs.getString("Age");
+				
+				System.out.println(fname + " " + lname + " " + age);
+				
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			
 		}catch(Exception ex){
@@ -76,8 +103,7 @@ public class DBConnect {
 	
 	public static void main(String[] args){
 		
-		new DBConnect();
-		new Gui();
+		new CreateDB();
 		
 	}
 
