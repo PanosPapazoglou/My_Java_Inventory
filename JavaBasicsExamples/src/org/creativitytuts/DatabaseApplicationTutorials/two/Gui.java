@@ -1,4 +1,4 @@
-package org.creativitytuts.DatabaseApplicationTutorials;
+package org.creativitytuts.DatabaseApplicationTutorials.two;
 
 import javax.swing.*;
 import java.awt.*;

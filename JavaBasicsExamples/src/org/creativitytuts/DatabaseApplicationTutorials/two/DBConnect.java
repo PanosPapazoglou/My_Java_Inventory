@@ -12,7 +12,7 @@
  *  Dynamic Class Loading
  *  http://kb.dualmind.gr/viewtopic.php?f=130&t=685&sid=1c4429ef9abd6c95d64da134f3d695b2
  */
-package org.creativitytuts.DatabaseApplicationTutorials;
+package org.creativitytuts.DatabaseApplicationTutorials.two;
 
 import java.sql.*;
 
