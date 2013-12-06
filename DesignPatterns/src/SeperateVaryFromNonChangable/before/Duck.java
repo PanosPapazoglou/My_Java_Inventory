@@ -7,7 +7,7 @@ public abstract class Duck {
 		
 	}
 	
-	// Ftiaxnoume mai abstract methodo gia to abstract class Duck i opoia tha prepei na ilopoiithei apo ta subcalsses tou Duck
+	// Ftiaxnoume mia abstract methodo gia to abstract class Duck i opoia tha prepei na ilopoiithei apo ta subcalsses tou Duck
   public abstract void display();
   
   
