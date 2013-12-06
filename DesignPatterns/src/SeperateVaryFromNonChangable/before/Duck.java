@@ -1,25 +1,27 @@
 package SeperateVaryFromNonChangable.before;
 
 public abstract class Duck {
-
-	public void quack(){
+	
+	// The constructor of a Duck
+	public Duck(){
 		
 	}
 	
-	
+	// Ftiaxnoume mai abstract methodo gia to abstract class Duck i opoia tha prepei na ilopoiithei apo ta subcalsses tou Duck
+  public abstract void display();
+  
+  
+  // Generaly code for a duck to quack
+	public void quack(){
+		
+	}
+
+  // Generaly code for a duck to swim	
 	public void swim(){
 		
 	}
 	
-	
-	public void display(){
-		
-	}
-	
-	
+
 	// Other duck-like methods
-	
-	
-	
 	
 }
