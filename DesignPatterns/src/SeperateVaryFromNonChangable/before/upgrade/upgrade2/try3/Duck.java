@@ -40,23 +40,17 @@ public abstract class Duck {
 
 	// -- All Ducks quacks and Swim - Thats why we put the code here in the abstract class
   // Generaly code for a duck to quack
-	public void quack(){
-		System.out.println("I am q!");
-	}
 
   // Generaly code for a duck to swim	
 	public void swim(){
 		System.out.println("I am swimming!");
 	}
 
-	// 		++ New Spec Code (Starts)
-	// Generaly code for a duck to swim
-	public void fly(){
-		System.out.println("I am flying;");
-	}
-	// 		++ New Spec Code (Ends)
-	
-	
+	// -- Afairoume tis methodous fly() kai quack() apo tin superclass afou paratiroume oti
+	//    eite kapoia eidi den petane i den kanoun quack
+	//    eite to kanoun alla me diaforetiko tropo
+	//    Etsi den eimaste se thesi na grapsoume ena genikeymeno kodika meso aytis tis superclass
+
 	
 	// -- Each Duck subtype is responsible for implementing its own display() behavior for how it looks on the screen
 

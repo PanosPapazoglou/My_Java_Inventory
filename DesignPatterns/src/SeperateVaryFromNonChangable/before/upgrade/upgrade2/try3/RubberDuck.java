@@ -1,6 +1,6 @@
 package SeperateVaryFromNonChangable.before.upgrade.upgrade2.try3;
 
-public class RubberDuck extends Duck {
+public class RubberDuck extends Duck implements Quackable {
 
 	public RubberDuck() {
 		// TODO Auto-generated constructor stub
@@ -12,11 +12,15 @@ public class RubberDuck extends Duck {
 		System.out.println("Looks like a RubberDuck!");
 	}
 
-	// 		++ New Spec Code - Solution 2 (Starts)
+	// 		++ New Spec   Code - Solution 2
+	//    -- New Spec 2 Code - Solution 3  (afairoume tin methdo fly pou apla tropopoiousame to kodika oste na min kanei tipota) 
+
 	@Override
-	public void fly(){
-		// Override to do nothing
+	public void quack() {
+		// TODO quack Method for RubberDuck
 	}
-	// 		++ New Spec Code - Solution 2 (Ends)
+	
+	
+	
 	
 }
