@@ -13,12 +13,12 @@ public abstract class Duck {
   
   // Generaly code for a duck to quack
 	public void quack(){
-		
+		System.out.println("I am quaking!");
 	}
 
   // Generaly code for a duck to swim	
 	public void swim(){
-		
+		System.out.println("I am swimming!");
 	}
 	
 
