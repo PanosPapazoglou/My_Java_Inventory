@@ -173,8 +173,44 @@
  *             Diladi tha epafiemetha stin methodo getAnimal na mas epistrepsei to katalilo object oste meso tou abstract methodo tou interface mas ayto to animal na bgalei ixo..
  *             Emeis diladi den xeroume poio einai to pragmatiko animal subtype..to mono pou mas noiazei einai oti exoume to tilekontrol oste na to kanoume na skouxei..
  *                          
+ *                          
+ *             Etsi tha exoume p.x. gia to behavior tou petagmatos..:
  *             
+ *                                                         <<interface>
+ *                                                          FlyBehavior
+ *                                                          -----------
+ *                                                            fly()
+ *                                                             | 
+ *                                                          |     |
+ *                                                       |           | 
+ *                                                   |                   |
+ *                                             FlyWithWings           FlyNoWay
+ *                                             ------------           --------
+ *                                                fly(){                fly(){
+ *                                                  //wingfly();          nofly();
+ *                                                }                     }
+ *                                                
+ *                                                
+ *                                                             
+ *             Epipleon an xreiastoun nea Fly Behaviors den tha xreiastei na tropopisoume tis klasis proigoumenon Fly Behaviors
+ *             kai episis dem tha xreaistei na peiraxoume poso mallon tin superclass Duck alla oute kai tin ekastote palia i nea subclass (neo eidos)
+ *             
+ *             
+ *             
+ *             
+ *           
+ *                                 //////////               TELIKA TI PETYXAINOUME????            ////////////
+ *                                 
+ *     Telika ayto pou petixainoume enai kai to CODE REUSE apo tin mia..
+ *     alla kai xoris ta arnitika pou eferne to Inheritance stis 3 proigoumenes prospathies mas..
+ *     
+ *     
+ *     
+ *     
+ *     
+ *     
  *  -----------------------------------------------------------------------------------------------------------------------------------
+ *  
  * New Spec 1: H anabathmisi pou mas zitithike exei na kanei me tin dinatotita tis papias na petaei 
  * Solution 1: Etsi apofasizoume stin abstract klasi na baloume tin methodo fly() stin logiki ton quack() kai swim()
  *            etsi oles oi papies na exoun ayti tin dinatotita otan kanoume subclasses
@@ -182,6 +218,7 @@
  * Problem 1 : Distixos me ayton ton tropo mporoun na petaxoun kai eidi papias pou den mporoun na petaxoun!!!
  * Solution2 : San 2i lisi loipon prokreinete to na  kanei OVERRIDE mesa stis CONCRETE CLASSES (diladi tis klasis ton eidon tis papias)
  *             tropoopiontas ton kodika oste aytes pou den mporoun na petoun na min petoun
+ * 
  * 
  *  
  */
