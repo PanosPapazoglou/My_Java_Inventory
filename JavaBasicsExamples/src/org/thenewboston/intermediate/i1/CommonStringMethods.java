@@ -1,4 +1,4 @@
-package org.thenewboston.intermediate;
+package org.thenewboston.intermediate.i1;
 
 public class CommonStringMethods {
 
