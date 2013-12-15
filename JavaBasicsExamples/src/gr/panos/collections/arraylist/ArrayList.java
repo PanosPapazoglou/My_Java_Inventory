@@ -1,4 +1,4 @@
-package gr.panos.arraylists;
+package gr.panos.collections.arraylist;
 
 public class ArrayList {
 
