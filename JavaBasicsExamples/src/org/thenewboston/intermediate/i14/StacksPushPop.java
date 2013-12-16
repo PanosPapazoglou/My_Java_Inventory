@@ -22,7 +22,9 @@ public class StacksPushPop {
 
 }
 
-//printStack methid
+//printStack method giati tha tin xrisimopoiisoume mono se ayti tin klasi..den tha tin epikaleite alli klasi..
+// kai static..gia na min xreiazetai na kanoume neo instance tis klasis mas apla kai mono gia na tin xrisimopoiisoume
+// afou prokeite epi tis ousias..gia utility...method..
 private static void printStack(Stack<String> s) {
     if(s.isEmpty()) {
         System.out.println("You have nothing in your stack");
