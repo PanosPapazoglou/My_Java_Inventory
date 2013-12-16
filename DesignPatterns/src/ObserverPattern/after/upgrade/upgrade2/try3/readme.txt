@@ -1,4 +1,15 @@
 /*
+ * New Spec 2: Na ftiaxtei kai to headDisplay 
+ * Solution 1: a) Apla tha dimiourgisoume allo ena concrete Display class pou tha ylopoiei ta 2 interfaces
+ *             b) Tha dimiourgisoume alli mia instance variable tin heat
+ *             c) tha epikolisoume tin methodo computeHeatIndex(float t, float rh) apo to http://wickedlysmart.com/code/HFDP/heatindex.txt
+ *             d) tha dosoume tin nea timi heat kalontas tin parapano methodo stin update() method mas ligo prin kalesoume tin display() method
+ 8             e) kai stin test class mas (WeatherStation.java) tha to kanoume kai ayto instantiate..   
+ *
+ *     
+ *  -----------------------------------------------------------------------------------------------------------------------------------
+ *
+ *
  * New Spec 1 / Before Design Pattern
  * -----------------------------------------
  * New Spec 1: Tha prepei na kanoume tin ilopoiisi oste na mporei enas client na enimeronete me ta nea data kathe fora pou ayta

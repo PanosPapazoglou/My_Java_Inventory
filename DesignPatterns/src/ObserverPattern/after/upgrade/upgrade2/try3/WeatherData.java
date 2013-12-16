@@ -1,4 +1,4 @@
-package ObserverPattern.after.upgrade.upgrade1.try2;
+package ObserverPattern.after.upgrade.upgrade2.try3;
 
 import java.util.ArrayList;
 
