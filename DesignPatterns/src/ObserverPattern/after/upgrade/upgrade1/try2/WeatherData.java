@@ -1,12 +1,12 @@
-package ObserverPattern.before.orig;
+package ObserverPattern.after.upgrade.upgrade1.try2;
 
 public class WeatherData {
-	
-	float temp = getTemperature();
-	float humidity = getHumidity();
-	float pressure = getPressure();
-	
 
+	// Instance variables Decleration
+	float temp;
+	float humidity;
+	float pressure;
+	
 	// Getters (Starts)
 	public float getTemperature(){
 		return temp;
@@ -34,13 +34,23 @@ public class WeatherData {
 	public void setPressure(float pressure){
 		this.pressure = pressure;
 	}
-	// Setters (Ends)
+	// Setters (Ends)	
+	
 	
 	
 	// Our code will go here for integration..
 	//This method gets called whenever the weather measurements have been updated
 	public void measurementsChanged(){
-		// Our code goes here..
+		
+		temp = getTemperature();
+		humidity = getHumidity();
+		pressure = getPressure();
+		
+		// With this 3 methods we upgrade the displays
+		currentConditionsDisplay.update(temp,humidity,pressure);
+		statisticsDisplay.update(temp,humidity,pressure);
+		forecastDisplay.update(temp,humidity,pressure);
+		
 	}
 	
 
