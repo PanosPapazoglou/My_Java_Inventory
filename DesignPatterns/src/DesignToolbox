@@ -1,0 +1,21 @@
+OO BASICS
+---------
+1. Abstraction
+2. Encapsulation 
+3. Polymorphism
+4.Inheritance
+
+
+OO PRINCIPLES
+-------------
+1. Encapsulate what varies.
+2. Favor composition over inheritance
+3. Program to interfaces, not implementations
+4. Strive for loosely coupled desings between objects that interact
+
+
+OO PRINCIPLES
+-------------
+1. Strategy Pattern
+2. Observer Pattern
+3. Decorator Pattern
