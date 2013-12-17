@@ -2,10 +2,12 @@ package DecoratorPattern.before.upgrade.upgrade1.try1;
 
 public class DecafWithSteamedMilkAndMocha extends Beverage {
 
-	@Override
-	public float cost() {
-		// TODO Auto-generated method stub
-		return 0;
+	public DecafWithSteamedMilkAndMocha(){
+		description = "This is decaf with steamed milk and mocha!!";
 	}
+	
+	public double cost(){
+		return 0;
+	};
 
 }

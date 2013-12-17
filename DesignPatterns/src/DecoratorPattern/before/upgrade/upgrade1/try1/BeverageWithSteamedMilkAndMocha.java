@@ -2,14 +2,12 @@ package DecoratorPattern.before.upgrade.upgrade1.try1;
 
 public abstract class BeverageWithSteamedMilkAndMocha extends Beverage {
 
-	private String description;
-	
-	public String getDescription(){
-		return description;
+	public BeverageWithSteamedMilkAndMocha(){
+		description = "This is Beverage with steamed milk and Mocha!!";
 	}
 	
-	public abstract float cost();
-
-	// Other Usefull methods!!
+	public double cost(){
+		return 0;
+	};
 	
 }

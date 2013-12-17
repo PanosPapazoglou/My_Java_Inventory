@@ -2,10 +2,12 @@ package DecoratorPattern.before.upgrade.upgrade1.try1;
 
 public class EspressoWithSteamedMilkAndMocha extends Beverage {
 
-@Override
-	public float cost() {
-		// TODO Auto-generated method stub
-		return 0;
+	public EspressoWithSteamedMilkAndMocha(){
+		description = "This is espresso with steamed milk and mocha!!";
 	}
+	
+	public double cost(){
+		return 0;
+	};
 
 }

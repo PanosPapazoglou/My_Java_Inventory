@@ -2,7 +2,7 @@ package DecoratorPattern.before.upgrade.upgrade1.try1;
 
 public abstract class Beverage {
 
-	private String description;
+	public String description;
 	private boolean milk;
 	private boolean soy;
 	private boolean mocha;
@@ -12,8 +12,7 @@ public abstract class Beverage {
 		return description;
 	}
 	
-	
-	public abstract float cost();
+	public abstract double cost();
 
 	// Other Usefull methods!!
 	
