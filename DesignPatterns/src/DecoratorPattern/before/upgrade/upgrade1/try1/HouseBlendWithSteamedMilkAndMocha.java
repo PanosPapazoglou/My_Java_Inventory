@@ -1,12 +1,6 @@
 package DecoratorPattern.before.upgrade.upgrade1.try1;
 
-public class HouseBlendWithSteamedMilkAndMocha extends BeverageWithSteamedMilkAndMocha {
-
-	@Override
-	public String getDescription() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+public class HouseBlendWithSteamedMilkAndMocha extends Beverage {
 
 	@Override
 	public float cost() {
