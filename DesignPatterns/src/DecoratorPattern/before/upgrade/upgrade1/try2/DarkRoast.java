@@ -2,16 +2,16 @@ package DecoratorPattern.before.upgrade.upgrade1.try2;
 
 public class DarkRoast extends Beverage {
 
-	@Override
-	public String getDescription() {
-		// TODO Auto-generated method stub
-		return null;
+	// DarkRoast Constructor
+	public DarkRoast(){
+		description = "This is DarkRoast";
 	}
-
+	
 	@Override
-	public float cost() {
+	public double cost() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
 
 }

@@ -1,15 +1,13 @@
 package DecoratorPattern.before.upgrade.upgrade1.try2;
 
 public class Decaf extends Beverage {
-
-	@Override
-	public String getDescription() {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public Decaf(){
+		description = "This is Decaf";
 	}
 
 	@Override
-	public float cost() {
+	public double cost() {
 		// TODO Auto-generated method stub
 		return 0;
 	}

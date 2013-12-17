@@ -2,14 +2,12 @@ package DecoratorPattern.before.upgrade.upgrade1.try2;
 
 public class Espresso extends Beverage {
 
-	@Override
-	public String getDescription() {
-		// TODO Auto-generated method stub
-		return null;
+	public Espresso(){
+		description = "This is Espresso";
 	}
-
+	
 	@Override
-	public float cost() {
+	public double cost() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
