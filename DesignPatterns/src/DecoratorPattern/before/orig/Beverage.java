@@ -2,10 +2,13 @@ package DecoratorPattern.before.orig;
 
 public abstract class Beverage {
 
-	private String description;
+	public String description;
 	
-	public abstract String getDescription();
-	public abstract float cost();
+	public String getDescription(){
+		return description;
+	}
+		
+	public abstract double cost();
 
 	// Other Usefull methods!!
 	

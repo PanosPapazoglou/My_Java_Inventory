@@ -2,16 +2,12 @@ package DecoratorPattern.before.orig;
 
 public class HouseBlend extends Beverage {
 
-	@Override
-	public String getDescription() {
-		// TODO Auto-generated method stub
-		return null;
+	public HouseBlend(){
+		description = "This is HouseBlend!!";
 	}
-
-	@Override
-	public float cost() {
-		// TODO Auto-generated method stub
+	
+	public double cost(){
 		return 0;
 	}
-
+	
 }
