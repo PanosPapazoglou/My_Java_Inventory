@@ -39,3 +39,23 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
 3. Decorator Pattern
 The Decorator Pattern attaches additional responsibilities to an object dynamically.
 Decorators provide a flexible alternative to subclassing for extending functionality.
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
++-----------------------------------------java.io.InputStream
+                                                  |
+    FileInputStream--StringBufferInputStream------+------{FilterInputStream}
+                                                  |
+                                                  +--[BufferedInputStream]--[LineNumberInputStream]
+
+
+
+όπου :
+Input Stream => Abstract Component
+FileInputStream , StringBufferInputStream => Concrete Components
+
+Filter Input Stream => Abstract Decorator
+BufferedInput Stream => Concrete Decorators
