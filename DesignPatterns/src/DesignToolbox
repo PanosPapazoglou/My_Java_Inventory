@@ -9,7 +9,7 @@ OO BASICS
 DESIGN PRINCIPLES
 -----------------
 1. Encapsulate what varies.
-2. Favor composition over inheritance
+2. Favor composition over inheritance (inheriting behavior at runtime..)
 3. Program to interfaces, not implementations
 4. Strive for loosely coupled desings between objects that interact
 5. Classes should be open for extension, but closed for modification
@@ -19,3 +19,23 @@ DESIGN PATTERS
 1. Strategy Pattern
 2. Observer Pattern
 3. Decorator Pattern
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+* Γενικά υπάρχουν 3 είδη Design Patterns : 
+1. Creational patterns
+2. Structural patterns
+3. Behavioral patterns
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+1. Strategy Pattern
+The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+Stategy lets the algorithm vary independently from clients that use it.
+
+2. Observer Pattern
+The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+
+3. Decorator Pattern
+The Decorator Pattern attaches additional responsibilities to an object dynamically.
+Decorators provide a flexible alternative to subclassing for extending functionality.
